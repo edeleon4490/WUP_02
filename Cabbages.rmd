@@ -60,6 +60,10 @@ c39 method has an average VitC level of 51.5 while c52 method has an average Vit
 
 <!--State hypothesis clearly.  Make sure your discussion of the inferential test covers all the aspects that the test output produces, such as test statistic, p-value etc.  Make a decision about the null hypothesis, explain the assumptions on which the selected test/procedure was based, and why the chosen procedure satisfys the assumptions and is appropriate to answer the research question!-->
 
+```{r}
+t.test(VitC~Cult,data=veggy)
+```
+The p-value is 3.405e-08.
 
 # Discussion and Conclusion
 
