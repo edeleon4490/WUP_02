@@ -53,7 +53,7 @@ Based on the boxplot above, we can see the there are higher levels of VitC with 
 favstats(VitC~Cult,data=veggy)
 ```
 
-c39 method has an average VitC level of 51.5 while c52 method has an average VitC level of 64.4.
+Based on the graph above c39 method has a VitC level mean of 51.5 while c52 method has a VitC level mean of 64.4.
 
 
 ## Inferential Results
@@ -63,8 +63,10 @@ c39 method has an average VitC level of 51.5 while c52 method has an average Vit
 ```{r}
 t.test(VitC~Cult,data=veggy)
 ```
-The p-value is 3.405e-08.
+The p-value is 0.000000033405 < 0.05 , so we reject the $H_0$
 
 # Discussion and Conclusion
 
 <!--Discussion and conclusion here.  If you found a relationship be sure to consider whether the relationship occurs because one of the variavbles causes the other, or whether they perhasps are related for some other reason.  Watch the chapter 6 videos from the GeorgeTown videos collection.!-->
+
+We wanted to discover if there is a difference in average VitC between c39 and c52 cultivation methods. Based on the graphs above we can conclude that the average levels of VitC is much higher in c52 cultivation method than that of c39 cultivation. Due to this and the P-value of 0.000000033405 < 0.05, we reject the $H_0$.
